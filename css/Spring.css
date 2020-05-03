@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+html{
+	height:100%;
+	background: url(../images/spring/back1.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+			p{
+				text-indent:2em;
+				text-align: left;
+				margin-top: 10px;
+			}
+			h2{
+				text-align: center;
+				color:firebrick;
+			}
+/*郁金香按钮*/
+			#wrap{
+				text-align: center;
+			}
+			.name_Yu{
+				background: url("../images/spring/circle.png");
+				width:100px;
+				height:100px;
+				border-radius: 50%;
+				text-align: center;
+				display: inline-block;
+				font-size: 60px;
+				line-height: 100px;
+				color: darkturquoise;
+				opacity: 0.6;
+				position: relative;
+				margin: 25px auto;
+				font-family: 楷体;
+			}
+			.name_Yu:hover{
+				transform: scale(1.2);
+				transition-duration: 1s;
+			}
+/*牡丹按钮*/
+			.name_Mu{
+				background: url("../images/spring/circle.png");
+				width:100px;
+				height:100px;
+				border-radius: 50%;
+				position: relative;
+				text-align: center;
+				display: inline-block;
+				font-size: 60px;
+				line-height: 100px;
+				color: crimson;
+				opacity: 0.6;
+				margin: 25px auto;
+				font-family: 楷体;
+			}
+			.name_Mu:hover{
+				transform: scale(1.2);
+				transition-duration: 1s;
+			}
+/*铃兰按钮*/
+			.name_Ling{
+				background: url("../images/spring/circle.png");
+				width:100px;
+				height:100px;
+				border-radius: 50%;
+				position: relative;
+				text-align: center;
+				display: inline-block;
+				font-size: 60px;
+				line-height: 100px;
+				color: mediumorchid;
+				opacity: 0.6;
+				margin: 25px auto;
+				font-family: 楷体;
+			}
+			.name_Ling:hover{
+				transform: scale(1.2);
+				transition-duration: 1s;
+			}
+			
+/*郁金香介绍*/
+			.YuJinXiang_1{
+				background:url(../images/spring/yu1.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				position: absolute;
+				left:80px;
+				top:50px;
+				display: none;
+				color: darkslategrey;
+			}
+
+/*郁金香花语*/
+			.YuJinXiang_2{
+				background:url(../images/spring/yu2.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				position: absolute;
+				right: 80px;
+				top:50px;
+				display: none;
+				color: darkmagenta;
+			}
+			.YuJinXiang_2 .on{
+				display:block;
+			}
+/*牡丹介绍*/
+			.MuDan_1{
+				background:url(../images/spring/mu1.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				position: absolute;
+				left:80px;
+				top:50px;
+				display: none;
+				color: orangered;
+			}
+/*牡丹花语*/
+			.MuDan_2{
+				background:url(../images/spring/mu2.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				position: absolute;
+				right: 80px;
+				top:50px;
+				display: none;
+				color: darkblue;
+			}
+/*铃兰介绍*/
+			.LingLan_1{
+				background:url(../images/spring/ling1.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				position: absolute;
+				left:80px;
+				top:50px;
+				display: none;
+				color: mediumvioletred;
+			}
+/*铃兰花语*/
+			.LingLan_2{
+				background:url(../images/spring/ling2.png);
+				width:300px;
+				height:500px;
+				font-family: 楷体;
+				font-size: 30px;
+				border-radius: 20%;
+				float: right;
+				position: absolute;
+				right: 80px;
+				top:50px;
+				display: none;
+				color: darkslateblue;
+			}
+/*返回主界面按钮*/
+			.back a{
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: url(../images/back.jpg);
+				background-position: -117px 391px;
+				opacity: 0.5;
+				position: relative;
+				margin: 20px auto 0 auto;
+			}
+/*按钮动画*/
+			.back a:hover{
+				animation:circle 2s infinite;
+			}
+			@keyframes circle{
+				0%{transform:rotate(0turn);}
+				100%{transform:rotate(1turn);}
+			}

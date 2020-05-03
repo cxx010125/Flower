@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>♆ 迟日江山丽，春风花草香</title>
+		<link rel="stylesheet" type="text/css" href="css/Spring.css">
+		<link rel="icon" href="images/logo.ico" type="image/x-icon"/>
+		<script language="javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			    $(".name_Mu").click(    
+			        function(){    
+			            $(".MuDan_1").fadeIn(800);
+						$(".MuDan_2").fadeIn(800);
+						$(".YuJinXiang_1").fadeOut(800);
+						$(".YuJinXiang_2").fadeOut(800);
+						$(".LingLan_1").fadeOut(800);
+						$(".LingLan_2").fadeOut(800);
+			        }
+				);    
+			})
+			
+			$(document).ready(function(){
+			    $(".name_Yu").click(    
+			        function(){    
+			            $(".YuJinXiang_1").fadeIn(800);
+						$(".YuJinXiang_2").fadeIn(800);
+						$(".MuDan_1").fadeOut(800);
+						$(".MuDan_2").fadeOut(800);
+						$(".LingLan_1").fadeOut(800);
+						$(".LingLan_2").fadeOut(800);
+			        }
+				);    
+			})
+			
+			$(document).ready(function(){
+			    $(".name_Ling").click(    
+			        function(){    
+			            $(".LingLan_1").fadeIn(800);
+						$(".LingLan_2").fadeIn(800);
+						$(".YuJinXiang_1").fadeOut(800);
+						$(".YuJinXiang_2").fadeOut(800);
+						$(".MuDan_1").fadeOut(800);
+						$(".MuDan_2").fadeOut(800);
+			        }
+				);    
+			})
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<audio controls autoplay>
+		<source src="music/spring.ogg"type="audio/ogg">
+		<source src="music/spring.mp3"type="audio/mp3">
+		<source src="music/spring.wav"type="audio/wav">
+		对不支持audio元素的浏览器提示
+		</audio>
+		<div class="YuJinXiang_1">
+			<br/><h2>郁金香</h2>
+			<b>
+			<p>是百合科郁金香属的多年生草本植物，具鳞茎。</p>
+			<p>英文名为“Garden tulip”或“Didier's tulip”。</p>
+			<p>花被片红色或杂有白色和黄色，有时为白色或黄色。</p>
+			</b>
+		</div>
+		<div class="YuJinXiang_2">
+			<br/><h2>花语</h2>
+			<b>
+			<p>郁金香本身的花语指的是表达的爱和永远的祝福等意。</p>
+			<p>红色郁金香，花语是热情和喜爱；</p>
+			<p>紫色郁金香花语是神秘和高贵；</p>
+			<p>白色郁金香花语是纯洁无暇与天真浪漫等。</p>
+			</b>
+		</div>
+		
+		<div class="MuDan_1">
+			<br/><h2>牡丹</h2>
+			<b>
+				<p>牡丹，色泽艳丽，富丽堂皇，素有“花中之王”的美誉。</p>
+				<p>牡丹品种繁多，色泽亦多，以黄、绿、肉红、深红为上品，尤其黄、绿为贵。</p>
+				<p>花大而香，故有“国色天香”之称。</p>
+			</b>
+		</div>
+		<div class="MuDan_2">
+			<br/><h2>花语</h2>
+			<b>
+				<p>牡丹看起来非常艳丽，显得雍容华贵。
+				人们一直把它们看作是富贵昌盛的象征。</p>
+				<p>不同颜色的含义略有所不同，红色寓意富贵、圆满，是百花之王。
+				紫色寓意不好意思。
+				白色表示高洁，仪态万千、守信。</p></b>
+		</div>
+		
+		<div class="LingLan_1">
+			<br/><h2>铃兰</h2>
+			<b><p>又名君影草、山谷百合、风铃草。
+				   铃兰全草可入药，有强心，利尿之功效。</p>
+				<p>用于充血性心力衰竭，心房纤颤，由高血压病及肾炎引起的左心衰竭。
+				但铃兰全株各部位均具有较强毒性。</p>
+			</b>
+		</div>
+		<div class="LingLan_2">
+			<br/><h2>花语</h2>
+			<b><p>铃兰株形小巧，花香怡人，在法国，是幸福的象征。</p>
+				<p>铃兰随风轻扣的乐声只有最爱它的人才能听见，它的守候只为最有心的人。</p>
+				<p>只伴着五月的春风开放，她的花语是幸福归来。</p></b>
+		</div>
+		
+		<div id="wrap">
+
+			<button class="name_Yu">
+				<a>郁</a>
+			</button>
+			<br/>
+			<button class="name_Mu">
+				<a>牡</a>
+			</button>
+			<br/>
+			<button class="name_Ling">
+				<a>铃</a>
+			</button>
+			<br/>
+			<div class="back">
+				<a href="index.html"></a>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

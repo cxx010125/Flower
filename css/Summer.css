@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+html{
+	height:100%;
+	background: url(../images/summer/back1.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+		list{list-style:none;}
+		i{font-style:normal;}
+		audio{
+			height:33px;
+		}
+		p{
+			text-indent:2em;
+			text-align: left;
+			margin-top: 3px;
+		}
+/*可视窗口*/
+		#wrap{
+			width:800px;
+			min-height:600px;
+			margin:10px auto;
+			overflow:hidden;
+			text-align: center;
+		}
+/*图片排列*/
+		#wrap ul{
+			width:4000px;
+			animation:move 30s infinite linear;
+		}
+/*图片动画*/
+		@keyframes move{
+			0%{transform:translateX(0px);}
+			100%{transform:translateX(-3200px);}
+		}
+/*鼠标悬停时暂停*/
+		#wrap ul:hover{
+			animation-play-state:paused;
+		}
+/*内容列表*/
+		ul li{
+			float:left;
+			width:800px;
+			height:400px;
+			list-style: none;
+		}
+/*内容图片*/
+		ul li img{
+			width:100%;
+			height:100%;
+		}
+/*紫罗兰块*/
+		.ZiLuoLan{
+			text-align: center;
+			color:darkmagenta;
+			opacity: 0.9;
+			font-family: 楷体;
+			font-size: 30px;
+			background-color: #E6E6FA;
+		}
+/*茉莉花*/
+		.MoLiHua{
+			text-align: center;
+			color:darkgreen;
+			opacity: 0.9;
+			font-family: 楷体;
+			font-size: 30px;
+			background-color: seashell;
+		}
+/*荷花*/
+		.HeHua{
+			text-align: center;
+			color:deeppink;
+			opacity: 0.9;
+			font-family: 楷体;
+			font-size: 30px;
+			background-color:#F8F8FF;
+		}
+/*曼陀罗*/
+		.ManTuoLuo{
+			text-align: center;
+			color:darkred;
+			opacity: 0.9;
+			font-family: 楷体;
+			font-size: 30px;
+			background-color: azure;
+		}
+/*返回按钮*/
+		.back a{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background: url(../images/back.jpg);
+			background-position: -117px 391px;
+			opacity: 0.5;
+			top:86.5%;
+			left:2%;
+		}
+		.back a:hover{
+			opacity: 0.8;
+		}

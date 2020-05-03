@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;padding: 0;}
+html{
+	height:100%;
+	background: url(../images/winter/back1.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+			audio{
+				height:35px;
+			}
+			p{
+				text-indent:2em;
+				text-align: left;
+				margin-top: 5px;
+			}
+/*主体属性*/
+			#contain{
+				width:1000px;
+				height: 480px;
+				margin: 0px auto;
+				text-align: center;
+			}
+/*梅花块*/
+			.MeiHua{
+				text-align: center;
+				background-color: #ADD8E6;
+				width:220px;
+				height: 480px;
+				position: relative;
+				display: inline-block;
+				margin: 30px 5px;
+				background: url(../images/winter/MeiHua.png);
+				opacity: 0.9;
+				border-radius: 5%;
+			}
+			.MeiHua:hover .M{
+				visibility: visible;
+				
+			}
+/*一品红块*/
+			.YiPingHong{
+				background-color: lawngreen;
+				width:220px;
+				height: 480px;
+				position: relative;
+				display: inline-block;
+				margin: 30px 5px;
+				background: url(../images/winter/YiPingHong.png);
+				opacity: 0.9;
+				border-radius: 5%;
+			}
+			.YiPingHong:hover .Y{
+				visibility: visible;
+			}
+/*鹤望兰块*/
+			.HeWangLan{
+				background-color: darkmagenta;
+				width:220px;
+				height: 480px;
+				position: relative;
+				display: inline-block;
+				margin: 30px 5px;
+				background: url(../images/winter/HeWangLan.png);
+				opacity: 0.9;
+				border-radius: 5%;
+			}
+			.HeWangLan:hover .H{
+				visibility: visible;
+			}
+/*蟹爪兰块*/
+			.XieZhaoLan{
+				background-color: salmon;
+				width:220px;
+				height: 480px;
+				position: relative;
+				display: inline-block;
+				margin: 30px 5px;
+				background: url(../images/winter/XieZhaoLan.png);
+				opacity: 0.9;
+				border-radius: 5%;
+			}
+			.XieZhaoLan:hover .X{
+				visibility: visible;
+			}
+
+/*梅花文字*/
+			.M{
+				width:220px;
+				height: 480px;
+				position: absolute;
+				left:0;
+				top:0;
+				font-family: 楷体;
+				font-size: 26px;
+				color: red;
+				background-color: #F8F8FF;
+				opacity: 0.9;
+				visibility: hidden;
+				border-radius: 5%;
+				text-align: center;
+			}
+/*一品红文字*/
+			.Y{
+				width:220px;
+				height: 480px;
+				position: absolute;
+				left:0;
+				top:0;
+				font-family: 楷体;
+				font-size: 26px;
+				color: midnightblue;
+				background-color: #F8F8FF;
+				opacity: 0.9;
+				visibility: hidden;
+				border-radius: 5%;
+			}
+/*鹤望兰文字*/
+			.H{
+				width:220px;
+				height: 480px;
+				position: absolute;
+				left:0;
+				top:0;
+				font-family: 楷体;
+				font-size: 26px;
+				color: darkmagenta;
+				background-color: #F8F8FF;
+				opacity: 0.9;
+				visibility: hidden;
+				border-radius: 5%;
+			}
+/*蟹爪兰文字*/
+			.X{
+				width:220px;
+				height: 480px;
+				position: absolute;
+				left:0;
+				top:0;
+				font-family: 楷体;
+				font-size: 26px;
+				color:darkred;
+				background-color: #F8F8FF;
+				opacity: 0.9;
+				visibility: hidden;
+				border-radius: 5%;
+			}
+/*返回按钮*/
+			.back a{
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: url(../images/back.jpg);
+				background-position: -117px 391px;
+				opacity: 0.5;
+				top:86%;
+				left:46%;
+			}
+			.back a:hover{
+				opacity: 0.8;
+			}

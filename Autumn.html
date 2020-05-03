@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>♆ 故园三径吐幽丛，一夜玄霜坠碧空</title>
+		<link rel="stylesheet" type="text/css" href="css/Autumn.css">
+		<link rel="icon" href="images/logo.ico" type="image/x-icon"/>
+	</head>
+	<body>
+		<audio controls autoplay>
+		<source src="music/autumn.ogg"type="audio/ogg">
+		<source src="music/autumn.mp3"type="audio/mp3">
+		<source src="music/autumn.wav"type="audio/wav">
+		对不支持audio元素的浏览器提示
+		</audio>
+<!--主窗口-->
+		<div id="wrap">
+			<div class ="num">
+				<marquee direction=left scrollamount=3px>
+				一叶知秋————第<i>一</i>枝
+				</marquee>
+			</div>
+			<ul>
+				<li class="on"><img src="images/autumn/GuiHua.jpg" alt=""></li>
+				<li><img src="images/autumn/TanHua.jpg" alt=""></li>
+				<li><img src="images/autumn/JinChaHua1.png" alt=""></li>
+				<li><img src="images/autumn/MiDieXiang.jpg" alt=""></li>
+			</ul>
+<!--切换按钮-->
+			<div class="btn">
+				<span class="left">&lt;</span>
+				<span class="right">&gt;</span>
+			</div>
+<!--花名-->
+			<div class="title">
+			暗淡轻黄体性柔，情疏迹远只香留。————桂花~~~
+			由来：相传，古时有一寡妇
+			路遇一口渴的老人，没有水的她便咬破指头，将血给老人喝。
+			老人忽然消失，留下了一个装着桂树种子的布袋。从此就有了桂花与桂花酒。
+			花语：桂花的颜色优雅高贵，象征崇高、美丽和忠诚。
+			中国古代，桂花的枝条象征着顺利的仕途。
+			欧美国家把桂花枝视为荣耀的代表。
+			桂花的花语：永伴佳人，秋桂如金代表着收货，桂花的亦象征着吉祥。
+			</div>
+		</div>
+		<div class="back">
+			<a href="index.html"></a>
+		</div>
+		
+		<script>
+			let aLi=document.getElementsByTagName("li"),
+				aSpan=document.getElementsByTagName("span"),
+				oTitle=document.getElementsByClassName("title")[0],
+				oI=document.getElementsByTagName("i")[0],
+				oGuiHua=document.getElementsByClassName("GuiHua"),
+				length=aLi.length,
+				i=0,
+				arr1=["一","二","三","四"],
+				arr2=["暗淡轻黄体性柔，情疏迹远只香留。————桂花~~~由来：相传，古时有一寡妇路遇一位口渴的老人，没有水的她便咬破指头，将血给老人喝。老人忽然消失，留下了一个装着桂树种子的布袋。从此就有了桂花与桂花酒。花语：桂花的颜色优雅高贵，象征崇高、美丽和忠诚。中国古代，桂花的枝条象征着顺利的仕途。欧美国家把桂花枝视为荣耀的代表。桂花的花语：永伴佳人，秋桂如金代表着收货，桂花的亦象征着吉祥。",
+						"优昙不是人间种，色相应归忉利天。————昙花~~~相传，昙花原是一位花神，但她爱上了照顾她的年轻人。玉帝知道后，便将花神贬为每年只能开一瞬间的昙花，把那年轻人送去出家，赐名韦陀，让他忘记花神。但花神却忘不了韦陀，她知道每年暮春时分，韦陀要下山采茶。所以昙花就在那个时候开放，希望韦陀能记起她。也因为昙花是在夕阳后见到韦陀，所以昙花都是夜间开放。【昙花的花语】：刹那间的美丽，一瞬间的永恒。",
+						"金黄花蕊曜人眸，独秀孤芳焕炫鎏。————金茶花~~~金花茶是一种拥有悠久历史的植物，极为罕见，分布极其狭窄。能耐瘠薄，也喜肥。耐涝力强。金花茶花色金黄，多数种具蜡质光泽，晶莹可爱，花型有杯状、壶状、碗状和盘状等，形态多样，秀丽雅致。不仅如此，金花茶还有极高的经济价值。其花除作观赏外，，还拥有抗癌作用和降低胆固醇脂蛋白的作用。【金茶花花语】：谦逊、理想的爱、美德、可爱。",
+						"流翠叶于纤柯兮，结微根于丹墀。————迷迭香~~~据说当耶稣在逃离犹太前往埃及的途中时，曾把他洗好的衣服晾在迷迭香花丛上，耶稣的能力就赋予在它身上。迭迭香除了被赐予许多神奇的疗效，还承袭了几个特征：耶稣在被钉十字架的时候只有三十三岁，而迭迭香的寿命最多也不会超过三十三年；耶稣的身高是180厘米左右，因此迭迭香无论长得再好再高都不会超过180厘米。【迷迭香花语】：留住回忆、忠诚、敬仰和怀念。",
+					];
+			
+			aSpan[1].onclick=function(){
+				aLi[i].className="";
+				i++;
+				if(i>=length)	{i=0;}
+				aLi[i].className="on";
+				oI.innerHTML=arr1[i];
+				oTitle.innerHTML=arr2[i];
+			}
+			aSpan[0].onclick=function(){
+				aLi[i].className="";
+				i--;
+				if(i<0)	{i=length-1;}
+				aLi[i].className="on";
+				oI.innerHTML=arr1[i];
+				oTitle.innerHTML=arr2[i];
+			}
+		</script>
+		
+	</body>
+</html>

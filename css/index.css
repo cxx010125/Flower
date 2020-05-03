@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+html{
+	height:100%;
+	background: url(../images/back3.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+			audio{
+				height: 30px;
+			}
+/*春天图片以及文字隐藏*/
+			#wrap{
+				margin:30px auto;
+				text-align: center;
+				width:800px;
+			}
+			.spring{
+				width:250px;
+				height:250px;
+				display: inline-block;
+				position: relative;
+				background: url("../images/mainwindow/spring1.png")no-repeat;
+				-webkit-mask:url("../images/mainwindow/heart1.png")no-repeat;
+				transform:rotate(315deg);
+			}
+			a{
+				visibility: hidden;
+				text-decoration: none;
+			}
+			.spring:hover a{
+				visibility: visible;
+			}
+			.spring:hover{
+				transform: scale(1.1);
+				transition-duration: 1s;
+			}
+			
+/*夏天图片以及文字隐藏*/
+			.summer{
+				width:250px;
+				height:250px;
+				display: inline-block;
+				background: url("../images/mainwindow/summer1.png")no-repeat;
+				-webkit-mask:url("../images/mainwindow/heart1.png")no-repeat;
+				transform:rotate(45deg);
+			}
+			.summer:hover a{
+				visibility: visible;
+			}
+			.summer:hover{
+				transform: scale(1.1);
+				transition-duration: 1s;
+			}
+
+/*秋天图片以及文字隐藏*/
+			.autumn{
+				width:250px;
+				height:250px;
+				display: inline-block;
+				background: url("../images/mainwindow/autumn1.png")no-repeat;
+				-webkit-mask:url("../images/mainwindow/heart1.png")no-repeat;
+				transform:rotate(225deg);
+			}
+			.autumn:hover a{
+				visibility: visible;
+			}
+			.autumn:hover{
+				transform: scale(1.1);
+				transition-duration: 2s;
+			}
+
+/*冬天图片以及文字隐藏*/
+			.winter{
+				width:250px;
+				height:250px;
+				display: inline-block;
+				background: url("../images/mainwindow/winter1.png")no-repeat;
+				-webkit-mask:url("../images/mainwindow/heart1.png")no-repeat;
+				transform:rotate(135deg);
+			}
+			.winter:hover a{
+				visibility: visible;
+			}
+			.winter:hover{
+				transform: scale(1.1);
+				transition-duration: 2s;
+			}
+
+/*"春,夏,秋,冬"文字的全局设置*/
+			a p{
+				text-align: center;
+				font-family: 楷体;
+				font-size: 100px;
+			}
+/*"春"字特效*/
+			.spring p{
+				color:greenyellow;
+				text-shadow:0 0 4px white,
+				0 -5px 6px green,
+				2px -10px 6px chartreuse,
+				-2px -15px 11px white,
+				2px -25px 18px lightblue;
+				position: relative;
+				top:65px;
+			}
+/*"夏"字特效*/
+			.summer p{
+				color:orangered;
+				text-shadow:0 0 4px white,
+				0 -5px 6px coral,
+				2px -10px 6px wheat,
+				-2px -15px 11px lightsalmon,
+				2px -25px 18px orange;
+				position: relative;
+				top:65px;
+			}
+/*"秋"字特效*/
+			.autumn p{
+				color:yellow;
+				text-shadow:0 0 4px white,
+				0 -5px 6px darkorange,
+				2px -10px 6px khaki,
+				-2px -15px 11px sandybrown,
+				2px -25px 18px wheat;
+				position: relative;
+				top:65px;
+			}
+/*"冬"字特效*/
+			.winter p{
+				color:skyblue;
+				text-shadow:0 0 4px white,
+				0 -5px 6px ghostwhite,
+				2px -10px 6px bisque,
+				-2px -15px 11px #E6E6FA,
+				2px -25px 18px #B0E0E6;
+				position: relative;
+				top:65px;
+			}
+/*版权*/
+			#copyright{
+				border-bottom:solid 10px transparent;
+				text-align:center;
+				color:brown;
+				position: relative;
+				bottom:-55px;
+				font-size: 20px;
+			}
